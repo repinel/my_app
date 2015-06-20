@@ -32,7 +32,7 @@ GIT
       sprockets-rails (>= 2.0, < 4.0)
 
 PATH
-  remote: /Users/rpinel/OSS/rails
+  remote: ../rails
   specs:
     actionmailer (5.0.0.alpha)
       actionpack (= 5.0.0.alpha)

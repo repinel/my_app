@@ -38,4 +38,6 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  config.cache_store = :file_store, '/Users/roque/Documents/Sources/open_sources/my_app/cache'
 end
