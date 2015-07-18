@@ -40,3 +40,6 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', github: "rails/web-console"
 end
+
+gem 'activeresource', path: '../activeresource' #github: 'rails/activeresource'
+gem 'rails-observers', github: 'rails/rails-observers'
