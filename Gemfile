@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'rails', path: '../rails'
-gem 'sprockets-rails', github: "rails/sprockets-rails"
-gem 'arel', github: "rails/arel"
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+# Use Puma as the app server
+gem 'puma'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -22,6 +22,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+# Action Cable dependencies for the Redis adapter
+gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -38,5 +40,8 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', github: "rails/web-console"
+  gem 'web-console', github: 'rails/web-console'
 end
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
