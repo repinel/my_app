@@ -1,4 +1,23 @@
 GIT
+  remote: git://github.com/rails/activemodel-serializers-xml.git
+  revision: 1f72d9507c91b1cda10d1d20eac2b74dd6d9d4b9
+  specs:
+    activemodel-serializers-xml (0.1.0)
+      activemodel
+      activerecord
+      activesupport
+
+GIT
+  remote: git://github.com/rails/activeresource.git
+  revision: ba719702d5c8b872d0eedb428f0512a784626660
+  specs:
+    activeresource (5.0.0)
+      activemodel (~> 5.x)
+      activemodel-serializers-xml (~> 0.1)
+      activesupport (~> 5.x)
+      rails-observers (~> 0.1.2)
+
+GIT
   remote: git://github.com/rails/coffee-rails.git
   revision: 29604a59a5d7ea314f54bb52302d68ef134806bf
   specs:
@@ -21,14 +40,6 @@ GIT
       activemodel (>= 4.2)
       debug_inspector
       railties (>= 4.2)
-
-PATH
-  remote: ../activeresource
-  specs:
-    activeresource (4.0.0)
-      activemodel (>= 4.0)
-      activesupport (>= 4.0)
-      rails-observers (~> 0.1.2)
 
 PATH
   remote: ../rails
@@ -174,6 +185,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activemodel-serializers-xml!
   activeresource!
   byebug
   coffee-rails!
